@@ -1,16 +1,12 @@
-# flutter_app
 
-A new Flutter application.
 
-## Getting Started
+So what you were saying last night was to move everything into one State object, like isLoading. 
+Going that route I still have something I don't understand.  With my current understanding, I would have
+to create a new PostModel for the entire page, include the loading as false, and each of the row one and two values
+just to update part of the UI.
 
-This project is a starting point for a Flutter application.
+So I would be doing things like:
+https://github.com/spencercope/flutter_testing/blob/c6a39035774018b10f510b3c73338af6ab8ba908/lib/main.dart#L99
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Which doesn't seem like the right way to do things.  What are you thoughts here, do I
+need more specific State objects? 
